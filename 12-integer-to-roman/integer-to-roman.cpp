@@ -21,10 +21,11 @@ public:
         vector<int> values = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
         string ans = "";
 
+        // values array me se har value ko check karte hue number me se subtract karte jao
         for(int i = 0; i < values.size(); i++){
-            while(num >= values[i]){
-                num -= values[i];
-                ans += str(values[i]);
+            while(num >= values[i]){ // jab tak current value number se choti ya equal hai
+                num -= values[i]; // number me se subtract karo
+                ans += str(values[i]); // aur corresponding Roman numeral ans me add karo
             }
         }
 
